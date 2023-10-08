@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: ["./*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
 
     
@@ -19,7 +19,7 @@ module.exports = {
       },
       backgroundImage: {
         'header-pattern': "url('./src/assests/envatoBg.svg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'profile1': "url('./src/assests/pattern2.png')",
       }
     },
 
@@ -32,5 +32,5 @@ module.exports = {
     //   }
     // }
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
