@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .ff {
+        background-image: url("./src/assests/pattern2.png");
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: 65% 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="flex max-w-7xl md:px-5 flex-col md:flex-row md:justify-between justify-center items-center"
+      >
+        <div class="">
+          <a href="#">
+            <img
+              alt="RealHomes Ultra"
+              src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2022/11/ultra-header-logo.png"
+            />
+          </a>
+        </div>
+
+        <div class="flex gap-4 my-5">
+          <div>
+            <i class="fa-solid fa-phone text-primary"></i>
+            <span>1-800-555-4321</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-circle-user text-3xl text-primary"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-bars text-3xl text-orange-400"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="relative">
+        <div class="flex flex-col lg:flex-row">
+          <div
+            class="p-10 lg:flex-grow border-t border-t-[1px] border-t-slate-100"
+          >
+            <h1 class="text-primary text-center text-3xl font-semibold px-5">
+              Find Your Sweet home
+            </h1>
+          </div>
+          <div
+            class="flex lg:flex-grow flex-col md:flex-row md:justify-around lg:justify-between items-center justify-center p-10 bg-sky-100 rounded-md"
+          >
+            <h4
+              class="text-black text-center font-semibold text-xl mb-5 md:mb-0"
+            >
+              Need Help To Choose Your Property
+            </h4>
+
+            <span
+              class="inline-block bg-primary text-sm font-semibold text-white py-3 px-5 rounded-full hover:bg-white hover:border-2 ease-linear duration-300 hover:border-primary hover:text-primary cursor-pointer"
+            >
+              Let Us Call You!
+            </span>
+          </div>
+        </div>
+
+        <!-- search box  -->
+
+        <div
+          class="w-[90%] z-30 lg:absolute lg:left-10 top-16 bg-white lg:w-[800px] mx-auto rounded-lg shadow-2xl my-5 p-10"
+        >
+          <div>
+            <div class="md:flex lg:flex-row">
+              <!-- search bar -->
+              <div class="flex flex-grow mr-2">
+                <span class="inline-block md:pt-5">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span
+                  id="search"
+                  class="inline-block w-full md:pt-5 ml-5 border-b border-b-[2px] pb-3 md:pb-0"
+                >
+                  <input
+                    class="appearance-none outline-none border-r border-r-[2px] border-r-slate-200 w-full"
+                    type="text"
+                    placeholder="Keyword"
+                  />
+                </span>
+              </div>
+
+              <!-- buttons -->
+
+              <div class="flex items-center justify-center gap-5 mt-5">
+                <div
+                  class="bg-primary px-6 py-2 cursor-pointer text-white rounded-full"
+                >
+                  All
+                </div>
+                <div
+                  class="bg-slate-200 px-6 py-2 cursor-pointer text-black rounded-full hover:text-white transition-all duration-400 ease-linear hover:bg-primary"
+                >
+                  For Rent
+                </div>
+                <div
+                  class="bg-slate-200 px-6 py-2 cursor-pointer text-black rounded-full hover:text-white transition-all duration-400 ease-linear hover:bg-primary"
+                >
+                  For Sale
+                </div>
+              </div>
+            </div>
+
+            <!-- selection -->
+
+            <div class="mt-5 md2:flex md2:flex-row">
+              <div
+                class="flex justify-between mb-5 md2:mb-0 md2:flex-grow md2:border-r md2:border-r-[3px] md2:border-r-slate-200 md2:px-4"
+              >
+                <span class="inline-block text-sm">All Main Locations</span>
+
+                <span class="inline-block px-2 rounded-full bg-sky-100">
+                  <i class="fa-solid fa-caret-down text-primary"></i>
+                </span>
+              </div>
+
+              <div
+                class="flex justify-between md2:flex-grow md2:border-r md2:border-r-[3px] md2:border-r-slate-200 md2:px-4"
+              >
+                <span class="inline-block text-sm">All Types</span>
+
+                <span class="inline-block px-2 rounded-full bg-sky-100">
+                  <i class="fa-solid fa-caret-down text-primary"></i>
+                </span>
+              </div>
+
+              <div
+                class="flex justify-between mt-5 md2:mt-0 md2:flex-grow md2:px-4"
+              >
+                <span class="inline-block text-sm">All Beds</span>
+
+                <span class="inline-block px-2 rounded-full bg-sky-100">
+                  <i class="fa-solid fa-caret-down text-primary"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- advanced search -->
+            <div class="flex justify-between mt-5 md2:w-1/2 md2:ms-auto">
+              <span
+                class="px-8 inline-block group h-10 leading-10 relative bg-sky-100 rounded-full hover:bg-primary transition-all duration-300 ease-linear cursor-pointer"
+              >
+                <i class="fa-solid fa-magnifying-glass text-primary"></i>
+                <i
+                  class="fa-solid fa-plus text-primary absolute left-12 top-1 text-xs"
+                ></i>
+                <span
+                  class="inline-block text-sky-400 group-hover:text-white ml-4 font-semibold"
+                >
+                  Advance Search
+                </span>
+              </span>
+
+              <span
+                class="cursor-pointer rounded-full text-white font-semibold px-8 inline-block h-10 leading-10 bg-primary hover:bg-sky-100 hover:text-sky-400 transition-all duration-300"
+              >
+                Search
+              </span>
+            </div>
+          </div>
+
+          <!-- half button -->
+        </div>
+
+        <!-- hero slide -->
+        <div>
+          <div class="relative">
+            <img
+              class="w-full xl:h-[900px] object-cover"
+              src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2022/06/spacejoy-scaled.jpg"
+              alt=""
+            />
+
+            <div
+              class="relative p-5 md2:w-[90%] lg:w-[900px] md2:mx-auto rounded-3xl md2:bottom-52 lg:bottom-20 md2:bg-white shadow-xl"
+            >
+              <span
+                class="inline-block absolute -top-5 left-5 rounded-full bg-primary py-1 px-3 text-white font-semibold"
+                >Featured</span
+              >
+
+              <div
+                class="md:flex md:justify-between xl:justify-evenly my-3 text-xl:items-baseline"
+              >
+                <div class="flex items-baseline">
+                  <h1
+                    class="text-black font-semibold text-2xl hover:text-primary transition-all duration-300 ease-linear cursor-pointer"
+                  >
+                    Villa on Hollywood Boulevard
+                  </h1>
+                  <h3 class="text-slate-400 font-semibold ml-3">Build 2018</h3>
+                </div>
+
+                <!-- to hide in sm -->
+
+                <div class="hidden md:block">
+                  <h1 class="text-slate-400 text-sm font-semibold">
+                    Bedroooms Bathrooms Area
+                  </h1>
+
+                  <div class="flex gap-x-7">
+                    <div class="flex gap-x-3">
+                      <svg
+                        fill="#1DB2FF"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          class="ultra-meta rh-ultra-light"
+                          d="M2.6 23c-0.6 0-1-0.2-1.3-0.6C1 22.1 0.9 21.7 1 21.3L2.2 9.9C2.3 9.5 3.1 9 3.9 9h16.1c0.9 0 1.6 0.5 1.7 0.9L23 21.2c0.1 0.5 0 0.9-0.3 1.2 -0.3 0.4-0.8 0.6-1.3 0.6H2.6zM14.9 5c-0.5 0-0.8-0.1-0.9-0.3 0-0.1 0-0.2 0-0.2l0-3.3C14.2 1.1 14.6 1 15.6 1h3.9c0.7 0 1.2 0.4 1.2 0.5L21 4.6l0 0.1C20.9 4.9 20.5 5 20.1 5H14.9zM3.9 5C3.5 5 3.1 4.9 3 4.7c0 0 0-0.1 0-0.1l0.4-3.1C3.4 1.4 3.9 1 4.6 1h3.9c1 0 1.4 0.1 1.6 0.2l0 3.2C9.7 4.7 8.8 5 8.1 5H3.9z"
+                        ></path>
+                        <path
+                          class="ultra-meta rh-ultra-dark"
+                          d="M19.4 2c0.1 0 0.2 0 0.3 0l0.2 2H15l0-2c0.2 0 0.3 0 0.6 0H19.4M8.4 2C8.7 2 8.9 2 9 2l0 1.8C8.7 3.9 8.4 4 8.1 4h-4l0.2-2c0.1 0 0.2 0 0.3 0H8.4M20.1 10c0.3 0 0.6 0.1 0.7 0.2L22 21.3c0 0 0 0.1 0 0.1 0 0.2 0 0.3-0.1 0.3 -0.1 0.1-0.3 0.2-0.6 0.2H2.6c-0.3 0-0.5-0.1-0.6-0.2C2 21.7 2 21.7 2 21.5c0 0 0-0.1 0-0.1l1.2-11.1C3.3 10.1 3.6 10 3.9 10H20.1M19.4 0h-3.9C14.5 0 13 0.1 13 1l0 3.5C12.8 5.3 13.7 6 14.9 6h5.2c1.2 0 2.1-0.7 1.9-1.5l-0.4-3.1C21.5 0.6 20.5 0 19.4 0L19.4 0zM8.4 0H4.6C3.5 0 2.5 0.6 2.4 1.3L2 4.5C1.9 5.3 2.7 6 3.9 6h4.2c1.2 0 3.1-0.7 2.9-1.5L11 1C11 0.1 9.5 0 8.4 0L8.4 0zM20.1 8H3.9C2.6 8 1.4 8.8 1.3 9.8L0 21.1C-0.2 22.7 0.9 24 2.6 24h18.7c1.7 0 2.9-1.3 2.6-2.9L22.7 9.8C22.6 8.8 21.4 8 20.1 8L20.1 8z"
+                        ></path>
+                      </svg>
+                      <span>3</span>
+                    </div>
+                    <div class="flex gap-3">
+                      <svg
+                        fill="#1DB2FF"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          class="ultra-meta rh-ultra-light"
+                          d="M9 22l0 1L9 22zM23 23L23 23zM1.3 22.2l0.3-0.9L1.3 22.2C1.3 22.2 1.3 22.2 1.3 22.2zM16.3 21.2l0.3 0.9L16.3 21.2zM9 17l0 1L9 17zM4.1 13c0.4-2 2-3.6 4.1-3.9L9 8.9l0.8 0.1c2.1 0.3 3.7 1.9 4.1 3.9H4.1zM23 8c0-3.9-3.1-7-7-7 -3.9 0-7 3.1-7 7 0-3.9 3.1-7 7-7C19.9 1 23 4.1 23 8z"
+                        ></path>
+                        <path
+                          class="ultra-meta rh-ultra-dark"
+                          d="M9 10l0.7 0.1c1.2 0.2 2.2 0.9 2.8 1.9H5.5c0.6-1 1.6-1.7 2.8-1.9L9 10M16 0c-4.4 0-8 3.6-8 8 0 0 0 0.1 0 0.1C5.2 8.6 3 11 3 14h12c0-3-2.2-5.4-5-5.9V8c0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6v16h2V8C24 3.6 20.4 0 16 0L16 0zM14.3 15.6c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.7 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.7-0.9C15.1 15.8 14.7 15.6 14.3 15.6L14.3 15.6zM3.7 15.6c-0.4 0-0.8 0.3-0.9 0.7l-0.7 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.7-0.9c0.2-0.5-0.1-1.1-0.6-1.3C3.9 15.6 3.8 15.6 3.7 15.6L3.7 15.6zM9 16c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 16.5 9.6 16 9 16L9 16zM16.3 20.2c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.3 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.3-0.9C17.1 20.5 16.7 20.2 16.3 20.2L16.3 20.2zM1.7 20.2c-0.4 0-0.8 0.3-0.9 0.7l-0.3 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.3-0.9c0.2-0.5-0.1-1.1-0.6-1.3C1.9 20.3 1.8 20.2 1.7 20.2L1.7 20.2zM9 21c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 21.5 9.6 21 9 21L9 21z"
+                        ></path>
+                      </svg>
+                      <span>4</span>
+                    </div>
+                    <div class="flex gap-3">
+                      <svg
+                        fill="#1DB2FF"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          class="ultra-meta rh-ultra-light"
+                          d="M4.4 23L1 19.6v-1l4-2 4 2v1L5.6 23H4.4zM18.6 9l-2-4H5h11.6l2-4h1L23 4.4v1.2L19.6 9H18.6z"
+                        ></path>
+                        <path
+                          class="ultra-meta rh-ultra-dark"
+                          d="M19.2 2L22 4.8v0.3L19.2 8l-1.4-2.9L17.7 5l0.1-0.1L19.2 2M5 17.7l0.1 0.1L8 19.2 5.2 22H4.8L2 19.2l2.9-1.4L5 17.7M20 0h-2l-2 4H4v12l-4 2v2l4 4h2l4-4v-2l-4-2V6h10l2 4h2l4-4V4L20 0 20 0zM24 10h-2v2h2V10L24 10zM24 14h-2v2h2V14L24 14zM24 18h-2v2h2V18L24 18zM24 22h-2v2h2V22L24 22zM20 22h-2v2h2V22L20 22zM16 22h-2v2h2V22L16 22zM12 22h-2v2h2V22L12 22z"
+                        ></path>
+                      </svg>
+                      <span
+                        >4300
+                        <span class="text-slate-400 text-sm font-semibold"
+                          >sq feet</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- for lg price -->
+
+                <div class="hidden xl:block">
+                  <h1 class="text-primary font-semibold">For Sale</h1>
+                  <h1 class="text-2xl font-semibold">$850,000</h1>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-baseline">
+                <div class="md:hidden">
+                  <h1 class="text-slate-400 text-sm font-semibold my-3">
+                    Bedroooms Bathrooms Area
+                  </h1>
+
+                  <div class="flex gap-x-7">
+                    <div class="flex gap-x-3">
+                      <svg
+                        fill="#1DB2FF"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          class="ultra-meta rh-ultra-light"
+                          d="M2.6 23c-0.6 0-1-0.2-1.3-0.6C1 22.1 0.9 21.7 1 21.3L2.2 9.9C2.3 9.5 3.1 9 3.9 9h16.1c0.9 0 1.6 0.5 1.7 0.9L23 21.2c0.1 0.5 0 0.9-0.3 1.2 -0.3 0.4-0.8 0.6-1.3 0.6H2.6zM14.9 5c-0.5 0-0.8-0.1-0.9-0.3 0-0.1 0-0.2 0-0.2l0-3.3C14.2 1.1 14.6 1 15.6 1h3.9c0.7 0 1.2 0.4 1.2 0.5L21 4.6l0 0.1C20.9 4.9 20.5 5 20.1 5H14.9zM3.9 5C3.5 5 3.1 4.9 3 4.7c0 0 0-0.1 0-0.1l0.4-3.1C3.4 1.4 3.9 1 4.6 1h3.9c1 0 1.4 0.1 1.6 0.2l0 3.2C9.7 4.7 8.8 5 8.1 5H3.9z"
+                        ></path>
+                        <path
+                          class="ultra-meta rh-ultra-dark"
+                          d="M19.4 2c0.1 0 0.2 0 0.3 0l0.2 2H15l0-2c0.2 0 0.3 0 0.6 0H19.4M8.4 2C8.7 2 8.9 2 9 2l0 1.8C8.7 3.9 8.4 4 8.1 4h-4l0.2-2c0.1 0 0.2 0 0.3 0H8.4M20.1 10c0.3 0 0.6 0.1 0.7 0.2L22 21.3c0 0 0 0.1 0 0.1 0 0.2 0 0.3-0.1 0.3 -0.1 0.1-0.3 0.2-0.6 0.2H2.6c-0.3 0-0.5-0.1-0.6-0.2C2 21.7 2 21.7 2 21.5c0 0 0-0.1 0-0.1l1.2-11.1C3.3 10.1 3.6 10 3.9 10H20.1M19.4 0h-3.9C14.5 0 13 0.1 13 1l0 3.5C12.8 5.3 13.7 6 14.9 6h5.2c1.2 0 2.1-0.7 1.9-1.5l-0.4-3.1C21.5 0.6 20.5 0 19.4 0L19.4 0zM8.4 0H4.6C3.5 0 2.5 0.6 2.4 1.3L2 4.5C1.9 5.3 2.7 6 3.9 6h4.2c1.2 0 3.1-0.7 2.9-1.5L11 1C11 0.1 9.5 0 8.4 0L8.4 0zM20.1 8H3.9C2.6 8 1.4 8.8 1.3 9.8L0 21.1C-0.2 22.7 0.9 24 2.6 24h18.7c1.7 0 2.9-1.3 2.6-2.9L22.7 9.8C22.6 8.8 21.4 8 20.1 8L20.1 8z"
+                        ></path>
+                      </svg>
+                      <span>3</span>
+                    </div>
+                    <div class="flex gap-3">
+                      <svg
+                        fill="#1DB2FF"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          class="ultra-meta rh-ultra-light"
+                          d="M9 22l0 1L9 22zM23 23L23 23zM1.3 22.2l0.3-0.9L1.3 22.2C1.3 22.2 1.3 22.2 1.3 22.2zM16.3 21.2l0.3 0.9L16.3 21.2zM9 17l0 1L9 17zM4.1 13c0.4-2 2-3.6 4.1-3.9L9 8.9l0.8 0.1c2.1 0.3 3.7 1.9 4.1 3.9H4.1zM23 8c0-3.9-3.1-7-7-7 -3.9 0-7 3.1-7 7 0-3.9 3.1-7 7-7C19.9 1 23 4.1 23 8z"
+                        ></path>
+                        <path
+                          class="ultra-meta rh-ultra-dark"
+                          d="M9 10l0.7 0.1c1.2 0.2 2.2 0.9 2.8 1.9H5.5c0.6-1 1.6-1.7 2.8-1.9L9 10M16 0c-4.4 0-8 3.6-8 8 0 0 0 0.1 0 0.1C5.2 8.6 3 11 3 14h12c0-3-2.2-5.4-5-5.9V8c0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6v16h2V8C24 3.6 20.4 0 16 0L16 0zM14.3 15.6c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.7 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.7-0.9C15.1 15.8 14.7 15.6 14.3 15.6L14.3 15.6zM3.7 15.6c-0.4 0-0.8 0.3-0.9 0.7l-0.7 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.7-0.9c0.2-0.5-0.1-1.1-0.6-1.3C3.9 15.6 3.8 15.6 3.7 15.6L3.7 15.6zM9 16c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 16.5 9.6 16 9 16L9 16zM16.3 20.2c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.3 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.3-0.9C17.1 20.5 16.7 20.2 16.3 20.2L16.3 20.2zM1.7 20.2c-0.4 0-0.8 0.3-0.9 0.7l-0.3 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.3-0.9c0.2-0.5-0.1-1.1-0.6-1.3C1.9 20.3 1.8 20.2 1.7 20.2L1.7 20.2zM9 21c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 21.5 9.6 21 9 21L9 21z"
+                        ></path>
+                      </svg>
+                      <span>4</span>
+                    </div>
+                    <div class="flex gap-3">
+                      <svg
+                        fill="#1DB2FF"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          class="ultra-meta rh-ultra-light"
+                          d="M4.4 23L1 19.6v-1l4-2 4 2v1L5.6 23H4.4zM18.6 9l-2-4H5h11.6l2-4h1L23 4.4v1.2L19.6 9H18.6z"
+                        ></path>
+                        <path
+                          class="ultra-meta rh-ultra-dark"
+                          d="M19.2 2L22 4.8v0.3L19.2 8l-1.4-2.9L17.7 5l0.1-0.1L19.2 2M5 17.7l0.1 0.1L8 19.2 5.2 22H4.8L2 19.2l2.9-1.4L5 17.7M20 0h-2l-2 4H4v12l-4 2v2l4 4h2l4-4v-2l-4-2V6h10l2 4h2l4-4V4L20 0 20 0zM24 10h-2v2h2V10L24 10zM24 14h-2v2h2V14L24 14zM24 18h-2v2h2V18L24 18zM24 22h-2v2h2V22L24 22zM20 22h-2v2h2V22L20 22zM16 22h-2v2h2V22L16 22zM12 22h-2v2h2V22L12 22z"
+                        ></path>
+                      </svg>
+                      <span
+                        >4300
+                        <span class="text-slate-400 text-sm font-semibold"
+                          >sq feet</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="xl:hidden">
+                  <h1 class="text-primary font-semibold">For Sale</h1>
+                  <h1 class="text-2xl font-semibold">$850,000</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="max-w-6xl mx-auto py-10 my-5 px-5 box-border">
+          <!-- card header -->
+          <div class="my-10">
+            <h1 class="text-slate-900 font-bold text-3xl mb-2">
+              Discober Latest Properties
+            </h1>
+            <p class="text-slate-500">Newest Properties Around You</p>
+          </div>
+          <div class="flex gap-4">
+            <!-- card img 1 -->
+            <div class="md:basis-1/2">
+              <div
+                class="relative box-border h-[300px] overflow-hidden rounded-xl"
+              >
+                <img
+                  class="rounded-xl w-full h-full"
+                  src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2022/06/architecture-home-merrick-way.jpg"
+                  alt=""
+                />
+                <div
+                  class="absolute p-2 top-0 flex right-0 left-0 justify-between"
+                >
+                  <div class="flex gap-3">
+                    <div
+                      class="bg-white px-3 py-1 rounded-full text-sm md:text-xs"
+                    >
+                      For Sale
+                    </div>
+                    <div
+                      class="bg-primary py-1 text-white text-sm px-3 rounded-full md:text-xs"
+                    >
+                      Featured
+                    </div>
+                    <div
+                      class="bg-orange-600 px-2 rounded-full text-white text-sm md:text-xs py-1"
+                    >
+                      Hot
+                    </div>
+                  </div>
+
+                  <div class="flex gap-3">
+                    <div
+                      class="bg-white text-primary px-3 rounded-full md:text-xs text-base"
+                    >
+                      <i class="fa-solid fa-camera text-primary"></i>
+                      <span class="text-sm">6</span>
+                    </div>
+                    <div
+                      class="bg-white text-primary md:text-xs px-3 rounded-full"
+                    >
+                      <i class="fa-solid fa-film text-primary"></i>
+                      <span class="text-sm">1</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="absolute right-0 bottom-0 p-5 flex gap-3">
+                  <span
+                    class="bg-white text-center inline-block px-2 py-1 rounded-full"
+                  >
+                    <i class="fa-regular fa-heart text-primary"></i>
+                  </span>
+                  <span
+                    class="bg-white text-center inline-block px-2 py-1 rounded-full"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-right-arrow-left text-primary"
+                    ></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="py-5">
+                <div class="flex flex-col gap-3">
+                  <h3 class="font-semibold text-slate-900 text-xl">
+                    Home in Merrick Way
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-location-dot text-primary"></i>
+                    <span class="text-slate-500 font-semibold text-sm"
+                      >Merrick Way, Miami, FL 33134, USA</span
+                    >
+                  </p>
+
+                  <h4 class="font-semibold text-lg text-slate-700">
+                    Single Family
+                  </h4>
+
+                  <div class="flex justify-between">
+                    <h1 class="text-xl text-slate-600">$540,000</h1>
+
+                    <div class="flex gap-x-3">
+                      <div class="flex gap-x-3">
+                        <svg
+                          fill="#1DB2FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="ultra-meta rh-ultra-light"
+                            d="M2.6 23c-0.6 0-1-0.2-1.3-0.6C1 22.1 0.9 21.7 1 21.3L2.2 9.9C2.3 9.5 3.1 9 3.9 9h16.1c0.9 0 1.6 0.5 1.7 0.9L23 21.2c0.1 0.5 0 0.9-0.3 1.2 -0.3 0.4-0.8 0.6-1.3 0.6H2.6zM14.9 5c-0.5 0-0.8-0.1-0.9-0.3 0-0.1 0-0.2 0-0.2l0-3.3C14.2 1.1 14.6 1 15.6 1h3.9c0.7 0 1.2 0.4 1.2 0.5L21 4.6l0 0.1C20.9 4.9 20.5 5 20.1 5H14.9zM3.9 5C3.5 5 3.1 4.9 3 4.7c0 0 0-0.1 0-0.1l0.4-3.1C3.4 1.4 3.9 1 4.6 1h3.9c1 0 1.4 0.1 1.6 0.2l0 3.2C9.7 4.7 8.8 5 8.1 5H3.9z"
+                          ></path>
+                          <path
+                            class="ultra-meta rh-ultra-dark"
+                            d="M19.4 2c0.1 0 0.2 0 0.3 0l0.2 2H15l0-2c0.2 0 0.3 0 0.6 0H19.4M8.4 2C8.7 2 8.9 2 9 2l0 1.8C8.7 3.9 8.4 4 8.1 4h-4l0.2-2c0.1 0 0.2 0 0.3 0H8.4M20.1 10c0.3 0 0.6 0.1 0.7 0.2L22 21.3c0 0 0 0.1 0 0.1 0 0.2 0 0.3-0.1 0.3 -0.1 0.1-0.3 0.2-0.6 0.2H2.6c-0.3 0-0.5-0.1-0.6-0.2C2 21.7 2 21.7 2 21.5c0 0 0-0.1 0-0.1l1.2-11.1C3.3 10.1 3.6 10 3.9 10H20.1M19.4 0h-3.9C14.5 0 13 0.1 13 1l0 3.5C12.8 5.3 13.7 6 14.9 6h5.2c1.2 0 2.1-0.7 1.9-1.5l-0.4-3.1C21.5 0.6 20.5 0 19.4 0L19.4 0zM8.4 0H4.6C3.5 0 2.5 0.6 2.4 1.3L2 4.5C1.9 5.3 2.7 6 3.9 6h4.2c1.2 0 3.1-0.7 2.9-1.5L11 1C11 0.1 9.5 0 8.4 0L8.4 0zM20.1 8H3.9C2.6 8 1.4 8.8 1.3 9.8L0 21.1C-0.2 22.7 0.9 24 2.6 24h18.7c1.7 0 2.9-1.3 2.6-2.9L22.7 9.8C22.6 8.8 21.4 8 20.1 8L20.1 8z"
+                          ></path>
+                        </svg>
+                        <span>3</span>
+                      </div>
+                      <div class="flex gap-3">
+                        <svg
+                          fill="#1DB2FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="ultra-meta rh-ultra-light"
+                            d="M9 22l0 1L9 22zM23 23L23 23zM1.3 22.2l0.3-0.9L1.3 22.2C1.3 22.2 1.3 22.2 1.3 22.2zM16.3 21.2l0.3 0.9L16.3 21.2zM9 17l0 1L9 17zM4.1 13c0.4-2 2-3.6 4.1-3.9L9 8.9l0.8 0.1c2.1 0.3 3.7 1.9 4.1 3.9H4.1zM23 8c0-3.9-3.1-7-7-7 -3.9 0-7 3.1-7 7 0-3.9 3.1-7 7-7C19.9 1 23 4.1 23 8z"
+                          ></path>
+                          <path
+                            class="ultra-meta rh-ultra-dark"
+                            d="M9 10l0.7 0.1c1.2 0.2 2.2 0.9 2.8 1.9H5.5c0.6-1 1.6-1.7 2.8-1.9L9 10M16 0c-4.4 0-8 3.6-8 8 0 0 0 0.1 0 0.1C5.2 8.6 3 11 3 14h12c0-3-2.2-5.4-5-5.9V8c0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6v16h2V8C24 3.6 20.4 0 16 0L16 0zM14.3 15.6c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.7 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.7-0.9C15.1 15.8 14.7 15.6 14.3 15.6L14.3 15.6zM3.7 15.6c-0.4 0-0.8 0.3-0.9 0.7l-0.7 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.7-0.9c0.2-0.5-0.1-1.1-0.6-1.3C3.9 15.6 3.8 15.6 3.7 15.6L3.7 15.6zM9 16c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 16.5 9.6 16 9 16L9 16zM16.3 20.2c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.3 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.3-0.9C17.1 20.5 16.7 20.2 16.3 20.2L16.3 20.2zM1.7 20.2c-0.4 0-0.8 0.3-0.9 0.7l-0.3 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.3-0.9c0.2-0.5-0.1-1.1-0.6-1.3C1.9 20.3 1.8 20.2 1.7 20.2L1.7 20.2zM9 21c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 21.5 9.6 21 9 21L9 21z"
+                          ></path>
+                        </svg>
+                        <span>4</span>
+                      </div>
+                      <div class="flex gap-3">
+                        <svg
+                          fill="#1DB2FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="ultra-meta rh-ultra-light"
+                            d="M4.4 23L1 19.6v-1l4-2 4 2v1L5.6 23H4.4zM18.6 9l-2-4H5h11.6l2-4h1L23 4.4v1.2L19.6 9H18.6z"
+                          ></path>
+                          <path
+                            class="ultra-meta rh-ultra-dark"
+                            d="M19.2 2L22 4.8v0.3L19.2 8l-1.4-2.9L17.7 5l0.1-0.1L19.2 2M5 17.7l0.1 0.1L8 19.2 5.2 22H4.8L2 19.2l2.9-1.4L5 17.7M20 0h-2l-2 4H4v12l-4 2v2l4 4h2l4-4v-2l-4-2V6h10l2 4h2l4-4V4L20 0 20 0zM24 10h-2v2h2V10L24 10zM24 14h-2v2h2V14L24 14zM24 18h-2v2h2V18L24 18zM24 22h-2v2h2V22L24 22zM20 22h-2v2h2V22L20 22zM16 22h-2v2h2V22L16 22zM12 22h-2v2h2V22L12 22z"
+                          ></path>
+                        </svg>
+                        <span
+                          >4300
+                          <span class="text-slate-400 text-sm font-semibold"
+                            >sq feet</span
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card img 2 -->
+            <div class="hidden md:block basis-1/2">
+              <div
+                class="relative box-border h-[300px] overflow-hidden rounded-xl"
+              >
+                <img
+                  class="rounded-xl w-full h-full"
+                  src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/06/property-2.jpg"
+                  alt=""
+                />
+                <div
+                  class="absolute p-2 top-0 flex right-0 left-0 justify-between"
+                >
+                  <div class="flex gap-3">
+                    <div
+                      class="bg-white px-3 py-1 rounded-full text-sm md:text-xs"
+                    >
+                      For Sale
+                    </div>
+                    <div
+                      class="bg-primary py-1 text-white text-sm px-3 rounded-full md:text-xs"
+                    >
+                      Featured
+                    </div>
+                  </div>
+
+                  <div class="flex gap-3">
+                    <div
+                      class="bg-white text-primary px-3 rounded-full md:text-xs text-base"
+                    >
+                      <i class="fa-solid fa-camera text-primary"></i>
+                      <span class="text-sm">4</span>
+                    </div>
+                    <div
+                      class="bg-white text-primary md:text-xs px-3 rounded-full"
+                    >
+                      <i class="fa-solid fa-film text-primary"></i>
+                      <span class="text-sm">1</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="absolute right-0 bottom-0 p-5 flex gap-3">
+                  <span
+                    class="bg-white text-center inline-block px-2 py-1 rounded-full"
+                  >
+                    <i class="fa-regular fa-heart text-primary"></i>
+                  </span>
+                  <span
+                    class="bg-white text-center inline-block px-2 py-1 rounded-full"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-right-arrow-left text-primary"
+                    ></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="py-5">
+                <div class="flex flex-col gap-3">
+                  <h3 class="font-semibold text-slate-900 text-xl">
+                    Villa in Coral Gables
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-location-dot text-primary"></i>
+                    <span class="text-slate-500 font-semibold text-sm"
+                      >Deering Bay Drive, Coral Gables.FL 33158, USA
+                    </span>
+                  </p>
+
+                  <h4 class="font-semibold text-lg text-slate-700">Villa</h4>
+
+                  <div class="flex justify-between">
+                    <h1 class="text-xl text-slate-600">$825,000</h1>
+
+                    <div class="flex gap-x-3">
+                      <div class="flex gap-x-3">
+                        <svg
+                          fill="#1DB2FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="ultra-meta rh-ultra-light"
+                            d="M2.6 23c-0.6 0-1-0.2-1.3-0.6C1 22.1 0.9 21.7 1 21.3L2.2 9.9C2.3 9.5 3.1 9 3.9 9h16.1c0.9 0 1.6 0.5 1.7 0.9L23 21.2c0.1 0.5 0 0.9-0.3 1.2 -0.3 0.4-0.8 0.6-1.3 0.6H2.6zM14.9 5c-0.5 0-0.8-0.1-0.9-0.3 0-0.1 0-0.2 0-0.2l0-3.3C14.2 1.1 14.6 1 15.6 1h3.9c0.7 0 1.2 0.4 1.2 0.5L21 4.6l0 0.1C20.9 4.9 20.5 5 20.1 5H14.9zM3.9 5C3.5 5 3.1 4.9 3 4.7c0 0 0-0.1 0-0.1l0.4-3.1C3.4 1.4 3.9 1 4.6 1h3.9c1 0 1.4 0.1 1.6 0.2l0 3.2C9.7 4.7 8.8 5 8.1 5H3.9z"
+                          ></path>
+                          <path
+                            class="ultra-meta rh-ultra-dark"
+                            d="M19.4 2c0.1 0 0.2 0 0.3 0l0.2 2H15l0-2c0.2 0 0.3 0 0.6 0H19.4M8.4 2C8.7 2 8.9 2 9 2l0 1.8C8.7 3.9 8.4 4 8.1 4h-4l0.2-2c0.1 0 0.2 0 0.3 0H8.4M20.1 10c0.3 0 0.6 0.1 0.7 0.2L22 21.3c0 0 0 0.1 0 0.1 0 0.2 0 0.3-0.1 0.3 -0.1 0.1-0.3 0.2-0.6 0.2H2.6c-0.3 0-0.5-0.1-0.6-0.2C2 21.7 2 21.7 2 21.5c0 0 0-0.1 0-0.1l1.2-11.1C3.3 10.1 3.6 10 3.9 10H20.1M19.4 0h-3.9C14.5 0 13 0.1 13 1l0 3.5C12.8 5.3 13.7 6 14.9 6h5.2c1.2 0 2.1-0.7 1.9-1.5l-0.4-3.1C21.5 0.6 20.5 0 19.4 0L19.4 0zM8.4 0H4.6C3.5 0 2.5 0.6 2.4 1.3L2 4.5C1.9 5.3 2.7 6 3.9 6h4.2c1.2 0 3.1-0.7 2.9-1.5L11 1C11 0.1 9.5 0 8.4 0L8.4 0zM20.1 8H3.9C2.6 8 1.4 8.8 1.3 9.8L0 21.1C-0.2 22.7 0.9 24 2.6 24h18.7c1.7 0 2.9-1.3 2.6-2.9L22.7 9.8C22.6 8.8 21.4 8 20.1 8L20.1 8z"
+                          ></path>
+                        </svg>
+                        <span>3</span>
+                      </div>
+                      <div class="flex gap-3">
+                        <svg
+                          fill="#1DB2FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="ultra-meta rh-ultra-light"
+                            d="M9 22l0 1L9 22zM23 23L23 23zM1.3 22.2l0.3-0.9L1.3 22.2C1.3 22.2 1.3 22.2 1.3 22.2zM16.3 21.2l0.3 0.9L16.3 21.2zM9 17l0 1L9 17zM4.1 13c0.4-2 2-3.6 4.1-3.9L9 8.9l0.8 0.1c2.1 0.3 3.7 1.9 4.1 3.9H4.1zM23 8c0-3.9-3.1-7-7-7 -3.9 0-7 3.1-7 7 0-3.9 3.1-7 7-7C19.9 1 23 4.1 23 8z"
+                          ></path>
+                          <path
+                            class="ultra-meta rh-ultra-dark"
+                            d="M9 10l0.7 0.1c1.2 0.2 2.2 0.9 2.8 1.9H5.5c0.6-1 1.6-1.7 2.8-1.9L9 10M16 0c-4.4 0-8 3.6-8 8 0 0 0 0.1 0 0.1C5.2 8.6 3 11 3 14h12c0-3-2.2-5.4-5-5.9V8c0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6v16h2V8C24 3.6 20.4 0 16 0L16 0zM14.3 15.6c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.7 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.7-0.9C15.1 15.8 14.7 15.6 14.3 15.6L14.3 15.6zM3.7 15.6c-0.4 0-0.8 0.3-0.9 0.7l-0.7 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.7-0.9c0.2-0.5-0.1-1.1-0.6-1.3C3.9 15.6 3.8 15.6 3.7 15.6L3.7 15.6zM9 16c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 16.5 9.6 16 9 16L9 16zM16.3 20.2c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.3 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.3-0.9C17.1 20.5 16.7 20.2 16.3 20.2L16.3 20.2zM1.7 20.2c-0.4 0-0.8 0.3-0.9 0.7l-0.3 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.3-0.9c0.2-0.5-0.1-1.1-0.6-1.3C1.9 20.3 1.8 20.2 1.7 20.2L1.7 20.2zM9 21c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 21.5 9.6 21 9 21L9 21z"
+                          ></path>
+                        </svg>
+                        <span>3.5</span>
+                      </div>
+                      <div class="flex gap-3">
+                        <svg
+                          fill="#1DB2FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="ultra-meta rh-ultra-light"
+                            d="M4.4 23L1 19.6v-1l4-2 4 2v1L5.6 23H4.4zM18.6 9l-2-4H5h11.6l2-4h1L23 4.4v1.2L19.6 9H18.6z"
+                          ></path>
+                          <path
+                            class="ultra-meta rh-ultra-dark"
+                            d="M19.2 2L22 4.8v0.3L19.2 8l-1.4-2.9L17.7 5l0.1-0.1L19.2 2M5 17.7l0.1 0.1L8 19.2 5.2 22H4.8L2 19.2l2.9-1.4L5 17.7M20 0h-2l-2 4H4v12l-4 2v2l4 4h2l4-4v-2l-4-2V6h10l2 4h2l4-4V4L20 0 20 0zM24 10h-2v2h2V10L24 10zM24 14h-2v2h2V14L24 14zM24 18h-2v2h2V18L24 18zM24 22h-2v2h2V22L24 22zM20 22h-2v2h2V22L20 22zM16 22h-2v2h2V22L16 22zM12 22h-2v2h2V22L12 22z"
+                          ></path>
+                        </svg>
+                        <span
+                          >3500
+                          <span class="text-slate-400 text-sm font-semibold"
+                            >sq feet</span
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card img 3 -->
+
+            <div class="hidden lg:block md:basis-1/2">
+              <div
+                class="relative box-border rounded-xl h-[300px] overflow-hidden"
+              >
+                <img
+                  width="488"
+                  height="326"
+                  class="rounded-xl w-full h-full"
+                  src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/06/property-3-768x513.jpg"
+                  alt=""
+                />
+                <div
+                  class="absolute p-2 top-0 flex right-0 left-0 justify-between"
+                >
+                  <div class="flex gap-3">
+                    <div
+                      class="bg-white px-3 py-1 rounded-full text-sm md:text-xs"
+                    >
+                      For Sale
+                    </div>
+                    <div
+                      class="bg-primary py-1 text-white text-sm px-3 rounded-full md:text-xs"
+                    >
+                      Featured
+                    </div>
+                    <div
+                      class="bg-orange-600 px-2 rounded-full text-white text-sm md:text-xs py-1"
+                    >
+                      Hot
+                    </div>
+                  </div>
+
+                  <div class="flex gap-3">
+                    <div
+                      class="bg-white text-primary px-3 rounded-full md:text-xs text-base"
+                    >
+                      <i class="fa-solid fa-camera text-primary"></i>
+                      <span class="text-sm">8</span>
+                    </div>
+                    <div
+                      class="bg-white text-primary md:text-xs px-3 rounded-full"
+                    >
+                      <i class="fa-solid fa-film text-primary"></i>
+                      <span class="text-sm">1</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="absolute right-0 bottom-0 p-5 flex gap-3">
+                  <span
+                    class="bg-white text-center inline-block px-2 py-1 rounded-full"
+                  >
+                    <i class="fa-regular fa-heart text-primary"></i>
+                  </span>
+                  <span
+                    class="bg-white text-center inline-block px-2 py-1 rounded-full"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-right-arrow-left text-primary"
+                    ></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="py-5">
+                <div class="flex flex-col gap-3">
+                  <h3 class="font-semibold text-slate-900 text-xl">
+                    Villa on Holywood Boulevard
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-location-dot text-primary"></i>
+                    <span class="text-slate-500 font-semibold text-sm"
+                      >Hatteras Lane,Hollywood, FL 33019, USA</span
+                    >
+                  </p>
+
+                  <h4 class="font-semibold text-lg text-slate-700">Villa</h4>
+
+                  <div class="flex justify-between">
+                    <h1 class="text-xl text-slate-600">$740,000</h1>
+
+                    <div class="flex gap-x-3">
+                      <div class="flex gap-x-3">
+                        <svg
+                          fill="#1DB2FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="ultra-meta rh-ultra-light"
+                            d="M2.6 23c-0.6 0-1-0.2-1.3-0.6C1 22.1 0.9 21.7 1 21.3L2.2 9.9C2.3 9.5 3.1 9 3.9 9h16.1c0.9 0 1.6 0.5 1.7 0.9L23 21.2c0.1 0.5 0 0.9-0.3 1.2 -0.3 0.4-0.8 0.6-1.3 0.6H2.6zM14.9 5c-0.5 0-0.8-0.1-0.9-0.3 0-0.1 0-0.2 0-0.2l0-3.3C14.2 1.1 14.6 1 15.6 1h3.9c0.7 0 1.2 0.4 1.2 0.5L21 4.6l0 0.1C20.9 4.9 20.5 5 20.1 5H14.9zM3.9 5C3.5 5 3.1 4.9 3 4.7c0 0 0-0.1 0-0.1l0.4-3.1C3.4 1.4 3.9 1 4.6 1h3.9c1 0 1.4 0.1 1.6 0.2l0 3.2C9.7 4.7 8.8 5 8.1 5H3.9z"
+                          ></path>
+                          <path
+                            class="ultra-meta rh-ultra-dark"
+                            d="M19.4 2c0.1 0 0.2 0 0.3 0l0.2 2H15l0-2c0.2 0 0.3 0 0.6 0H19.4M8.4 2C8.7 2 8.9 2 9 2l0 1.8C8.7 3.9 8.4 4 8.1 4h-4l0.2-2c0.1 0 0.2 0 0.3 0H8.4M20.1 10c0.3 0 0.6 0.1 0.7 0.2L22 21.3c0 0 0 0.1 0 0.1 0 0.2 0 0.3-0.1 0.3 -0.1 0.1-0.3 0.2-0.6 0.2H2.6c-0.3 0-0.5-0.1-0.6-0.2C2 21.7 2 21.7 2 21.5c0 0 0-0.1 0-0.1l1.2-11.1C3.3 10.1 3.6 10 3.9 10H20.1M19.4 0h-3.9C14.5 0 13 0.1 13 1l0 3.5C12.8 5.3 13.7 6 14.9 6h5.2c1.2 0 2.1-0.7 1.9-1.5l-0.4-3.1C21.5 0.6 20.5 0 19.4 0L19.4 0zM8.4 0H4.6C3.5 0 2.5 0.6 2.4 1.3L2 4.5C1.9 5.3 2.7 6 3.9 6h4.2c1.2 0 3.1-0.7 2.9-1.5L11 1C11 0.1 9.5 0 8.4 0L8.4 0zM20.1 8H3.9C2.6 8 1.4 8.8 1.3 9.8L0 21.1C-0.2 22.7 0.9 24 2.6 24h18.7c1.7 0 2.9-1.3 2.6-2.9L22.7 9.8C22.6 8.8 21.4 8 20.1 8L20.1 8z"
+                          ></path>
+                        </svg>
+                        <span>3</span>
+                      </div>
+                      <div class="flex gap-3">
+                        <svg
+                          fill="#1DB2FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="ultra-meta rh-ultra-light"
+                            d="M9 22l0 1L9 22zM23 23L23 23zM1.3 22.2l0.3-0.9L1.3 22.2C1.3 22.2 1.3 22.2 1.3 22.2zM16.3 21.2l0.3 0.9L16.3 21.2zM9 17l0 1L9 17zM4.1 13c0.4-2 2-3.6 4.1-3.9L9 8.9l0.8 0.1c2.1 0.3 3.7 1.9 4.1 3.9H4.1zM23 8c0-3.9-3.1-7-7-7 -3.9 0-7 3.1-7 7 0-3.9 3.1-7 7-7C19.9 1 23 4.1 23 8z"
+                          ></path>
+                          <path
+                            class="ultra-meta rh-ultra-dark"
+                            d="M9 10l0.7 0.1c1.2 0.2 2.2 0.9 2.8 1.9H5.5c0.6-1 1.6-1.7 2.8-1.9L9 10M16 0c-4.4 0-8 3.6-8 8 0 0 0 0.1 0 0.1C5.2 8.6 3 11 3 14h12c0-3-2.2-5.4-5-5.9V8c0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6v16h2V8C24 3.6 20.4 0 16 0L16 0zM14.3 15.6c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.7 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.7-0.9C15.1 15.8 14.7 15.6 14.3 15.6L14.3 15.6zM3.7 15.6c-0.4 0-0.8 0.3-0.9 0.7l-0.7 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.7-0.9c0.2-0.5-0.1-1.1-0.6-1.3C3.9 15.6 3.8 15.6 3.7 15.6L3.7 15.6zM9 16c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 16.5 9.6 16 9 16L9 16zM16.3 20.2c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.3 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.3-0.9C17.1 20.5 16.7 20.2 16.3 20.2L16.3 20.2zM1.7 20.2c-0.4 0-0.8 0.3-0.9 0.7l-0.3 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.3-0.9c0.2-0.5-0.1-1.1-0.6-1.3C1.9 20.3 1.8 20.2 1.7 20.2L1.7 20.2zM9 21c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 21.5 9.6 21 9 21L9 21z"
+                          ></path>
+                        </svg>
+                        <span>4</span>
+                      </div>
+                      <div class="flex gap-3">
+                        <svg
+                          fill="#1DB2FF"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="ultra-meta rh-ultra-light"
+                            d="M4.4 23L1 19.6v-1l4-2 4 2v1L5.6 23H4.4zM18.6 9l-2-4H5h11.6l2-4h1L23 4.4v1.2L19.6 9H18.6z"
+                          ></path>
+                          <path
+                            class="ultra-meta rh-ultra-dark"
+                            d="M19.2 2L22 4.8v0.3L19.2 8l-1.4-2.9L17.7 5l0.1-0.1L19.2 2M5 17.7l0.1 0.1L8 19.2 5.2 22H4.8L2 19.2l2.9-1.4L5 17.7M20 0h-2l-2 4H4v12l-4 2v2l4 4h2l4-4v-2l-4-2V6h10l2 4h2l4-4V4L20 0 20 0zM24 10h-2v2h2V10L24 10zM24 14h-2v2h2V14L24 14zM24 18h-2v2h2V18L24 18zM24 22h-2v2h2V22L24 22zM20 22h-2v2h2V22L20 22zM16 22h-2v2h2V22L16 22zM12 22h-2v2h2V22L12 22z"
+                          ></path>
+                        </svg>
+                        <span
+                          >4530
+                          <span class="text-slate-400 text-sm font-semibold"
+                            >sq feet</span
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- navigation bar -->
+
+          <div class="flex justify-evenly my-5 max-w-sm mx-auto">
+            <div class="bg-slate-200 px-4 py-2 rounded-full cursor-pointer">
+              <i class="fa-solid fa-caret-left text-white"></i>
+            </div>
+            <div
+              class="flex cursor-pointer items-center justify-center gap-4 border-[2px] border-slate-100 rounded-full shadow-md px-5"
+            >
+              <i class="fa-regular fa-circle-dot text-primary text-xs"></i>
+              <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+              <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+              <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+              <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+              <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+            </div>
+            <div class="bg-primary cursor-pointer px-4 py-2 rounded-full">
+              <i class="fa-solid fa-caret-right text-white"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-sky-100 py-10 ff relative">
+          <div class="max-w-7xl mx-auto bg-cover py-8 md2:flex px-5 md2:gap-10">
+            <div class="relative box-border md2:basis-2/3 rounded-xl">
+              <img
+                class="rounded-xl w-full h-full"
+                src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2022/06/architecture-home-merrick-way.jpg"
+                alt=""
+              />
+
+              <img
+                class="absolute top-4 left-4 w-24 z-40"
+                alt="Home in Merrick Way"
+                src="https://ultra-realhomes.b-cdn.net/wp-content/plugins/realhomes-elementor-addon//assets/images/map-featured.png"
+              />
+              <div class="absolute p-5 bottom-5 flex left-0 justify-between=">
+                <div class="flex gap-3">
+                  <div
+                    class="bg-black text-white px-3 py-2 rounded-full md:text-xs text-base"
+                  >
+                    <i class="fa-solid fa-camera text-white"></i>
+                  </div>
+                  <span class="inline-block leading-10 text-white">6</span>
+                  <div
+                    class="bg-black text-white md:text-xs px-3 py-2 rounded-full"
+                  >
+                    <i class="fa-solid fa-film text-white"></i>
+                  </div>
+                  <span class="inline-block leading-10 text-white">1</span>
+                </div>
+              </div>
+
+              <div class="absolute right-0 bottom-5 p-5 flex gap-3">
+                <span
+                  class="bg-black text-center inline-block px-3 py-2 rounded-full"
+                >
+                  <i class="fa-regular fa-heart text-white"></i>
+                </span>
+                <span
+                  class="bg-black text-center inline-block px-3 py-2 rounded-full"
+                >
+                  <i class="fa-solid fa-arrow-right-arrow-left text-white"></i>
+                </span>
+              </div>
+
+              <!-- navigation dots -->
+              <div
+                class="flex justify-evenly my-5 max-w-sm mx-auto absolute -bottom-10 left-0 right-0 mx-auto"
+              >
+                <div
+                  class="bg-slate-900 px-4 hover:bg-primary transition-all duration-300 ease-linear py-2 rounded-full cursor-pointer"
+                >
+                  <i class="fa-solid fa-caret-left text-white"></i>
+                </div>
+                <div
+                  class="flex cursor-pointer bg-slate-100 items-center justify-center gap-4 border-[2px] border-slate-100 rounded-full shadow-md px-5"
+                >
+                  <i class="fa-regular fa-circle-dot text-primary text-xs"></i>
+                  <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+                  <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+                  <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+                  <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+                  <i class="fa-solid fa-circle text-sky-200 text-[5px]"></i>
+                </div>
+                <div
+                  class="bg-black hover:bg-primary transition-all duration-300 ease-linear cursor-pointer px-4 py-2 rounded-full"
+                >
+                  <i class="fa-solid fa-caret-right text-white"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="py-3 relative md2:py-0 lg:basis-1/3 flex flex-col items-start md2:basis-1/3"
+            >
+              <div class="flex my-1 items-center justify-between w-full">
+                <div class="flex gap-3">
+                  <div
+                    class="bg-white px-3 py-1 rounded-full text-sm md:text-xs"
+                  >
+                    For Sale
+                  </div>
+                  <div
+                    class="bg-primary py-1 text-white text-sm px-3 rounded-full md:text-xs"
+                  >
+                    Featured
+                  </div>
+                  <div
+                    class="bg-orange-600 px-2 rounded-full text-white text-sm md:text-xs py-1"
+                  >
+                    Hot
+                  </div>
+                </div>
+
+                <div>
+                  <h3 class="font-semibold leading-10 text-lg">Build 2018</h3>
+                </div>
+              </div>
+
+              <h1
+                class="hover:text-primary my-1 ease-linear duration-300 cursor-pointer font-semibold text-3xl md2:text-4xl"
+              >
+                Home in Merrick Way
+              </h1>
+              <p
+                class="hover:text-primary my-3 text-stone-500 text-sm font-semibold cursor-pointer ease-linear duration-300"
+              >
+                <i class="fa-solid fa-location-dot text-primary"></i>
+                Merrick Way, Miami, FL 33134, USA
+              </p>
+
+              <div class="flex gap-x-3 my-5 md2:relative md2:right-20">
+                <div
+                  class="flex gap-x-3 w-24 h-20 rounded-lg shadow-sm bg-white items-center justify-center"
+                >
+                  <svg
+                    fill="#1DB2FF"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      class="ultra-meta rh-ultra-light"
+                      d="M2.6 23c-0.6 0-1-0.2-1.3-0.6C1 22.1 0.9 21.7 1 21.3L2.2 9.9C2.3 9.5 3.1 9 3.9 9h16.1c0.9 0 1.6 0.5 1.7 0.9L23 21.2c0.1 0.5 0 0.9-0.3 1.2 -0.3 0.4-0.8 0.6-1.3 0.6H2.6zM14.9 5c-0.5 0-0.8-0.1-0.9-0.3 0-0.1 0-0.2 0-0.2l0-3.3C14.2 1.1 14.6 1 15.6 1h3.9c0.7 0 1.2 0.4 1.2 0.5L21 4.6l0 0.1C20.9 4.9 20.5 5 20.1 5H14.9zM3.9 5C3.5 5 3.1 4.9 3 4.7c0 0 0-0.1 0-0.1l0.4-3.1C3.4 1.4 3.9 1 4.6 1h3.9c1 0 1.4 0.1 1.6 0.2l0 3.2C9.7 4.7 8.8 5 8.1 5H3.9z"
+                    ></path>
+                    <path
+                      class="ultra-meta rh-ultra-dark"
+                      d="M19.4 2c0.1 0 0.2 0 0.3 0l0.2 2H15l0-2c0.2 0 0.3 0 0.6 0H19.4M8.4 2C8.7 2 8.9 2 9 2l0 1.8C8.7 3.9 8.4 4 8.1 4h-4l0.2-2c0.1 0 0.2 0 0.3 0H8.4M20.1 10c0.3 0 0.6 0.1 0.7 0.2L22 21.3c0 0 0 0.1 0 0.1 0 0.2 0 0.3-0.1 0.3 -0.1 0.1-0.3 0.2-0.6 0.2H2.6c-0.3 0-0.5-0.1-0.6-0.2C2 21.7 2 21.7 2 21.5c0 0 0-0.1 0-0.1l1.2-11.1C3.3 10.1 3.6 10 3.9 10H20.1M19.4 0h-3.9C14.5 0 13 0.1 13 1l0 3.5C12.8 5.3 13.7 6 14.9 6h5.2c1.2 0 2.1-0.7 1.9-1.5l-0.4-3.1C21.5 0.6 20.5 0 19.4 0L19.4 0zM8.4 0H4.6C3.5 0 2.5 0.6 2.4 1.3L2 4.5C1.9 5.3 2.7 6 3.9 6h4.2c1.2 0 3.1-0.7 2.9-1.5L11 1C11 0.1 9.5 0 8.4 0L8.4 0zM20.1 8H3.9C2.6 8 1.4 8.8 1.3 9.8L0 21.1C-0.2 22.7 0.9 24 2.6 24h18.7c1.7 0 2.9-1.3 2.6-2.9L22.7 9.8C22.6 8.8 21.4 8 20.1 8L20.1 8z"
+                    ></path>
+                  </svg>
+                  <span>3</span>
+                </div>
+                <div
+                  class="flex gap-x-3 w-24 h-20 rounded-lg shadow-sm bg-white items-center justify-center"
+                >
+                  <svg
+                    fill="#1DB2FF"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      class="ultra-meta rh-ultra-light"
+                      d="M9 22l0 1L9 22zM23 23L23 23zM1.3 22.2l0.3-0.9L1.3 22.2C1.3 22.2 1.3 22.2 1.3 22.2zM16.3 21.2l0.3 0.9L16.3 21.2zM9 17l0 1L9 17zM4.1 13c0.4-2 2-3.6 4.1-3.9L9 8.9l0.8 0.1c2.1 0.3 3.7 1.9 4.1 3.9H4.1zM23 8c0-3.9-3.1-7-7-7 -3.9 0-7 3.1-7 7 0-3.9 3.1-7 7-7C19.9 1 23 4.1 23 8z"
+                    ></path>
+                    <path
+                      class="ultra-meta rh-ultra-dark"
+                      d="M9 10l0.7 0.1c1.2 0.2 2.2 0.9 2.8 1.9H5.5c0.6-1 1.6-1.7 2.8-1.9L9 10M16 0c-4.4 0-8 3.6-8 8 0 0 0 0.1 0 0.1C5.2 8.6 3 11 3 14h12c0-3-2.2-5.4-5-5.9V8c0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6v16h2V8C24 3.6 20.4 0 16 0L16 0zM14.3 15.6c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.7 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.7-0.9C15.1 15.8 14.7 15.6 14.3 15.6L14.3 15.6zM3.7 15.6c-0.4 0-0.8 0.3-0.9 0.7l-0.7 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.7-0.9c0.2-0.5-0.1-1.1-0.6-1.3C3.9 15.6 3.8 15.6 3.7 15.6L3.7 15.6zM9 16c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 16.5 9.6 16 9 16L9 16zM16.3 20.2c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.3 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.3-0.9C17.1 20.5 16.7 20.2 16.3 20.2L16.3 20.2zM1.7 20.2c-0.4 0-0.8 0.3-0.9 0.7l-0.3 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.3-0.9c0.2-0.5-0.1-1.1-0.6-1.3C1.9 20.3 1.8 20.2 1.7 20.2L1.7 20.2zM9 21c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 21.5 9.6 21 9 21L9 21z"
+                    ></path>
+                  </svg>
+                  <span>4</span>
+                </div>
+                <div
+                  class="flex gap-x-3 w-36 h-20 rounded-lg shadow-sm bg-white items-center justify-center"
+                >
+                  <svg
+                    fill="#1DB2FF"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      class="ultra-meta rh-ultra-light"
+                      d="M4.4 23L1 19.6v-1l4-2 4 2v1L5.6 23H4.4zM18.6 9l-2-4H5h11.6l2-4h1L23 4.4v1.2L19.6 9H18.6z"
+                    ></path>
+                    <path
+                      class="ultra-meta rh-ultra-dark"
+                      d="M19.2 2L22 4.8v0.3L19.2 8l-1.4-2.9L17.7 5l0.1-0.1L19.2 2M5 17.7l0.1 0.1L8 19.2 5.2 22H4.8L2 19.2l2.9-1.4L5 17.7M20 0h-2l-2 4H4v12l-4 2v2l4 4h2l4-4v-2l-4-2V6h10l2 4h2l4-4V4L20 0 20 0zM24 10h-2v2h2V10L24 10zM24 14h-2v2h2V14L24 14zM24 18h-2v2h2V18L24 18zM24 22h-2v2h2V22L24 22zM20 22h-2v2h2V22L20 22zM16 22h-2v2h2V22L16 22zM12 22h-2v2h2V22L12 22z"
+                    ></path>
+                  </svg>
+                  <span
+                    >4530
+                    <span class="text-slate-400 text-sm font-semibold"
+                      >sq feet</span
+                    ></span
+                  >
+                </div>
+              </div>
+
+              <p
+                class="text-primary font-semibold text-3xl lg:text-5xl my-3 md2:my-7"
+              >
+                $540,000
+              </p>
+              <p class="text-[15px]">
+                Enchanting three bedroom, three bath home with spacious one
+                bedroom, one bath cabana, in-laws quarters
+              </p>
+            </div>
+          </div>
+
+          <!-- homes in bar -->
+          <div class="flex gap-5 max-w-3xl px-5">
+            <div
+              class="bg-[url('https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/06/property-3-1024x684.jpg')] aspect-video rounded-md bg-cover bg-center basis-1/4"
+            ></div>
+            <div
+              class="bg-[url('https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/06/House-Design-1024x595.jpg')] aspect-video rounded-md bg-cover basis-1/4 relative"
+            >
+              <div
+                class="bg-primary h-[3px] w-[90%] absolute -bottom-3 mx-auto left-0 right-0 rounded-md"
+              ></div>
+            </div>
+            <div
+              class="bg-[url('https://ultra-realhomes.b-cdn.net/wp-content/uploads/2022/06/architecture-home-merrick-way-1024x683.jpg')] aspect-video rounded-md bg-cover basis-1/4"
+            ></div>
+            <div
+              class="basis-1/4 lg:basis-1/6 flex aspect-video flex-col items-center justify-center rounded bg-white shadow-md font-bold"
+            >
+              <i class="fa-solid fa-house-chimney"></i>
+              <span class="inline-block">4</span>
+              <span class="hidden lg:inline-block">Properties</span>
+            </div>
+          </div>
+
+          <div
+            class="absolute w-14 rounded h-8 absolute hidden lg:block bg-primary right-32 xl:right-72 bottom-10"
+          ></div>
+        </div>
+      </section>
+
+      <section>
+        <!-- testimonial section -->
+        <div>
+          <h1>Customers Loves Us</h1>
+
+          <!-- profile image section -->
+          <div>
+
+          </div>
+
+          <!-- profile content -->
+          <div>
+            <h1>
+              This is genuinely the best theme I have ever bought in terms of super easy & clear instructions to follow.
+            </h1>
+            <p>I have been a web designer ofr over 18 years now. the theme is fantastic, flexible and simply excellent to use. I cannot recommend enough!</p>
+
+            <h3>John Doe</h3>
+            <p>Themeforest User</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      let searchInput = document.getElementById("search");
+
+      searchInput.addEventListener("click", () => {
+        searchInput.classList.add("border-primary");
+      });
+    </script>
+  </body>
+</html>
